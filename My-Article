@@ -1,0 +1,29 @@
+<h2>My New Article</h2>
+<p>Battleline 
+
+A two-player showdown that involves strategic troop deployment. 
+Originally designed by Reiner Knizia, this post introduces a custom adaptation using a standard deck of cards.
+
+Game Setup 
+Removing 4 Aces and 2 Jokers. Additionally, randomly remove 2 cards. Place these cards face down between the players to represent 8 battlefields to be contested. Each player is dealt 6 cards, with the remainder forming the draw pile.
+
+Winning the Game
+* Total Victory: Win any four of the battlefields.
+* Sweeping Advance: Win three adjacent battlefields.
+* Flanking Move: Win two consecutive battlefields on either end.
+
+Gameplay 
+Players take turns, playing one card and then drawing one card. Each battlefield can hold a maximum of three cards; once filled, they form a battle formation with ordered strength:  Flush Straight > Three of a Kind > Straight > Flush > Any other combinations (Straight does not need to be in order)
+
+When a battle formation is ready on your side, you can launch an attack in that battlefield anytime within your turn. You can attack on multiple battlefield per turn. Move your troop forward half a space to indicate the win, and the opponent can no longer place down card on that battlefield.
+
+Winning an Attack
+* Direct Confrontation: If the opponent also has three cards, the stronger formation wins.
+* Opportunistic Assault: If the opponent has not yet played a card, you immediately win that battlefield.
+* Secure the Advantage: If the opponent has played one or two cards, the attacker wins the battlefield if they can prove that the opponent cannot form a stronger formation based on the cards already played.
+
+Additional Details
+* If formations are equal, compare the sum of the card numbers; if still tied, that battlefield has no winner.
+* Continue playing hand cards when the draw pile is exhausted. If there is no room to place down a card, skip the play phase but you can still launch attacks.
+* When restarting the game, shuffle the two randomly removed cards back into the deck, then removing two new cards.
+</p>
