@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Exploration Game Rules</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        ul {
+            margin: 10px 0 10px 20px;
+        }
+        .example {
+            background-color: #eef;
+            padding: 10px;
+            border-left: 4px solid #5b9bd5;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Temple Exploration Game Rules</h1>
+    <p><strong>Recommended for 4 or more players, supporting 2–8 players.</strong></p>
+    <p>In the depths of the temple, treasures might await—or traps might spring. Will you take one more step forward, or retreat with the treasures you’ve already secured?</p>
+
+    <h2>Game Setup</h2>
+    <p>Prepare the following three types of cards from a standard deck:</p>
+    <ul>
+        <li><strong>Trap Cards:</strong> ♠️A–K (any two consecutive numbers will trigger a trap).</li>
+        <li><strong>Treasure Chest Cards:</strong> Jokers and red odd-numbered cards (♦️♥️A/3/5/7/9/J/K).</li>
+        <li><strong>Artifact Cards:</strong> Red even-numbered cards greater than 2 (♥️4/6/8/10/Q).</li>
+    </ul>
+    <p>Shuffle the 13 Trap Cards and 16 Treasure Chest Cards together face down to form the deck. Set the 5 Artifact Cards aside.</p>
+    <p>For the gem tokens, use 20 unused cards from the deck, placed face down (each representing 5 gems). Use a separate deck with a different back design for individual gems, where each card represents 1 gem (see illustration).</p>
+
+    <h2>Gameplay</h2>
+    <p>At the start of each round, shuffle the lowest Artifact Card into the deck, then begin the exploration phase (any player may flip the cards).</p>
+
+    <h3>1️⃣ Flip a card from the deck:</h3>
+    <ul>
+        <li><strong>If it’s a Treasure Chest Card:</strong> Distribute the corresponding number of gems equally among all players still exploring (A=1, K=15). Any leftover gems that cannot be evenly split are added to the communal pile.</li>
+        <li><strong>If it’s an Artifact Card:</strong> Place it directly into the communal pile.</li>
+        <li><strong>If it’s a Trap Card:</strong> If a card with a consecutive number has already been revealed (e.g., A and K, A and 2), the trap is triggered, forcing everyone to flee and drop all their gems. The round ends immediately. Otherwise, nothing happens.</li>
+    </ul>
+
+    <h3>2️⃣ Players decide whether to stay or retreat:</h3>
+    <ul>
+        <li><strong>Players who stay:</strong> Continue exploring together by flipping another card. If no one stays, the round ends.</li>
+        <li><strong>Players who retreat:</strong> Safely take their gems and split the communal pile's treasures. (Artifacts cannot be split and can only be taken by players retreating alone.)</li>
+    </ul>
+
+    <p>At the end of the round, remove any Artifact Cards that were revealed and the trap card that ended the round (if triggered) from the game. Shuffle the remaining cards back into the deck for the next round.</p>
+
+    <h2>Game End</h2>
+    <p>The game lasts 5 rounds. The player with the highest total treasure value at the end wins. Gems are worth 1 point each, and Artifact Cards are worth their face value.</p>
+
+    <div class="example">
+        <h3>Example of Gem Distribution:</h3>
+        <p>If four players are exploring and a J (worth 11 gems) is revealed, each player receives 2 gems (take 2 gem tokens), and 3 gems are placed in the communal pile. If two players then retreat simultaneously, they split the communal gems evenly, each taking 1 gem, leaving 1 gem in the pile.</p>
+    </div>
+</body>
+</html>
