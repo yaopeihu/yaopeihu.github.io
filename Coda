@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Deduction Game Rules</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        ul {
+            margin: 10px 0 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Coda</h1>
+    <p> A mini deduction game for 2-4 players with just half a deck of cards, inspired by the classic board game <em>Coda</em> (also known as <em>Da Vinci Code</em>). 
+       This article introduces a self-designed gameplay mode with a dynamic balancing mechanism. 
+    </p>
+
+    <h2>Game Setup</h2>
+    <ul>
+        <li>Take all Hearts and Spades cards numbered 2 to K from a standard deck (24 cards in total). Shuffle these cards thoroughly.</li>
+        <li>Deal 4 starting cards to each player (in a 4-player game, deal 3 cards each). The remaining cards form the draw pile.</li>
+    </ul>
+
+    <h2>Card Arrangement Rules</h2>
+    <ul>
+        <li>Players must arrange their cards in ascending order (from smallest to largest) in front of them.</li>
+        <li>Cards with the same value can be placed in any relative order.</li>
+        <li>All cards are placed face-down initially, but players can check their own cards at any time.</li>
+    </ul>
+
+    <h2>Gameplay</h2>
+    <p>Players take turns in a clockwise order. On their turn, each player performs the following steps:</p>
+    <ol>
+        <li><strong>Draw a Card:</strong> Draw one card from the pile and add it to your lineup, keeping it face-down and following the arrangement rules.</li>
+        <li><strong>Guess an Opponent's Card:</strong> Attempt to guess if an opponent's hidden cards include a specific value.
+            <ul>
+                <li>If the guess is correct, the opponent must reveal one matching card of their choice. You may then continue guessing or end your turn.</li>
+                <li>If the guess is incorrect, you must reveal the card you just added to your lineup, and your turn ends.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h2>Game End</h2>
+    <p>
+        When the draw pile is empty, players can only guess cards during their turn. If a guess is incorrect, the turn immediately passes to the next player.
+    </p>
+    <p>
+        The game ends when there is only one player left with unrevealed (secret) cards. That player is the winner.
+    </p>
+</body>
+</html>
