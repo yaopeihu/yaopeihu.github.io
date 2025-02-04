@@ -9,19 +9,22 @@
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 20px;
-            padding: 20px;
             background-color: #f9f9f9;
             color: #333;
         }
-        h1, h2 {
+        h1, h2, h3 {
             color: #2c3e50;
+            margin-bottom: -10px;
         }
-        ul {
-            margin: 10px 0 10px 20px;
+        .center {
+            width: 90%; /* Set a wider width for small devices */
+            max-width: 600px; /* Restrict the maximum width for larger screens */
+            margin: 0 auto; /* Center content horizontally */
         }
     </style>
 </head>
 <body>
+    <div class="center">
     <h1>Coda</h1>
     <p> A mini deduction game for 2-4 players with just half a deck of cards, inspired by the classic board game <em>Coda</em> (also known as <em>Da Vinci Code</em>). 
        This article introduces a self-designed gameplay mode with a dynamic balancing mechanism. 
@@ -59,5 +62,6 @@
     <p>
         The game ends when there is only one player left with unrevealed (secret) cards. That player is the winner.
     </p>
+    </div>     
 </body>
 </html>
