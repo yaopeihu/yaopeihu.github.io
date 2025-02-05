@@ -1,0 +1,112 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost Cities</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-bottom: -10px;
+        }
+        .center {
+            width: 90%; /* Set a wider width for small devices */
+            max-width: 600px; /* Restrict the maximum width for larger screens */
+            margin: 0 auto; /* Center content horizontally */
+        }
+        .example {
+            background-color: #eef;
+            border-left: 4px solid #5b9bd5;
+            padding-left: 20px;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <h1>Lost Cities</h1>
+        <p>
+            We are about to seek treasure in a lost city, but every expedition comes at a steep price. 
+            You can also enlist local companions, which doubles both the risk and the reward in the end.
+        </p>
+        <p>
+            This version is adapted from the original by Reiner Knizia (designer of <em>Modern Art</em>), 
+            and can be played with a standard deck of playing cards.
+        </p>
+    
+        <hr>
+    
+        <h2>Game Setup</h2>
+        <ol>
+            <li>Take a standard deck of playing cards and remove <strong>4 Aces</strong>, placing them in the center of the table to represent the four lost cities.</li>
+            <li>Deal <strong>1 Joker</strong> to each player. Shuffle the remaining cards to form a draw pile.</li>
+            <li>Each player starts by drawing <strong>5 cards</strong>, so together with the Joker, everyone has <strong>6 cards</strong> in hand at the start.</li>
+        </ol>
+    
+        <h2>Game Flow</h2>
+        <p>Players take turns. On your turn, play one card then draw one card.</p>
+        <p>
+            When playing a card, it must match the suit of one of the Aces:
+        </p>
+        <ul>
+            <li>Play it <em>on your side</em> of the Ace to signify exploring that city.</li>
+            <li>Place it <em>on top of the Ace</em> (i.e., on the city’s discard pile) to discard that card.</li>
+        </ul>
+    
+        <p>
+            When drawing a card, you may:
+        </p>
+        <ul>
+            <li>Draw the <strong>top card from the draw pile</strong>, or</li>
+            <li>Take the <strong>top card from any city’s discard pile</strong>.</li>
+        </ul>
+    
+        <p>As soon as the draw pile is empty, the round ends.</p>
+    
+        <hr>
+    
+        <h2>Exploring with Cards</h2>
+        <p>
+            Each player’s exploration is independent; you only consider the cards on your side for scoring.
+        </p>
+    
+        <ul>
+            <li>
+                <strong>2–10 (Number Cards):</strong>  
+                Except for the first card you play in that city, each subsequent number card must be strictly higher than the previous number card used in that city.
+            </li>
+            <li>
+                <strong>Joker (Wild Card):</strong>  
+                <ul>
+                    <li>May substitute for any suit’s number card.</li>
+                    <li>Can only be played immediately after a <strong>2–9</strong>.</li>
+                    <li>Its “value” is considered the previous card’s value <strong>+1</strong>.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>J, Q, K (Multiplier Cards):</strong>  
+                <ul>
+                    <li>Must be played <strong>before</strong> any number cards are placed for that city.</li>
+                    <li>Playing 1/2/3 of these multiplier cards makes the final score for that city multiply by <strong>2/3/4</strong> respectively.</li>
+                </ul>
+            </li>
+        </ul>
+    
+        <hr>
+    
+        <h2>Scoring</h2>
+        <p>
+            For each city you explored, calculate:<br>
+            <em>(Sum of Number Cards – Cost) × Multiplier</em><br>
+            The <strong>cost</strong> is <strong>20</strong>. Sum all city scores you have (for each city you explored) to get your total exploration score.
+        </p>
+        <p>
+            It is recommended to play <strong>three rounds</strong>. The player with the highest total score across all rounds wins.
+        </p>
+    </div>     
+</body>
