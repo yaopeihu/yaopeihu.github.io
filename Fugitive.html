@@ -1,0 +1,97 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fugitive</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-bottom: -10px;
+        }
+        .center {
+            width: 90%; /* Set a wider width for small devices */
+            max-width: 600px; /* Restrict the maximum width for larger screens */
+            margin: 0 auto; /* Center content horizontally */
+        }
+        .example {
+            background-color: #eef;
+            border-left: 4px solid #5b9bd5;
+            padding-left: 20px;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="center">
+        <h1>Fugitive</h1>
+        <p>The cunning fugitive moves between hideouts to catch a plane. Can the agent track down the fugitive before they escape, or being outmaneuvered?</p>
+        
+        <h2>Game Setup</h2>
+        <ul>
+            <li>Shuffle the ♣️Clubs, ♥️Hearts, and ♠️Spades separately into 3 draw piles.</li>
+            <li>Place the ♦️10 face-up on one side of the table as the starting card.</li>
+            <li>The fugitive starts with ♦️J/Q/K and one Joker in their hand.</li>
+            <li>Remove all other Diamonds and another Joker from the game.</li>
+        </ul>
+
+        <h3>Card Ranking</h3>
+        <p>♦️10-K < ♣️A-K < ♥️A-K < ♠️A-K < 🃏</p>
+        <p>The fugitive must play a higher card than previous one, but no more than 3 ranks higher (i.e., runs at most 3 steps at a time). In order to win, the fugitive must place down the Joker.</p>
+        <div class="example">
+            <ul>
+                <li>♣️A is 3 ranks higher than ♦️J, making it a valid play.</li>
+                <li>The Joker is 1 rank higher than ♠️K.</li>
+            </ul>
+        </div>
+
+        <h2>Gameplay</h2>
+        <h3> The first round:</h3>
+        <ul>
+            <li><b>Fugitive's Turn</b>: Draws 3 cards from Clubs and 2 from Hearts, then plays 1 or 2 cards face-down as <i>hideouts</i>.</li>
+            <li><b>Agent's Turn</b>: Draws 2 cards from any pile and makes one guess about the fugitive’s hideouts.</li>
+        </ul>
+        <h3> The later rounds:</h3>
+        <ul>
+            <li>Players take turns, starting by drawing 1 card from any pile.</li>
+            <li>The fugitive plays 1 or 0 hideout, with an option to sprint.</li>
+            <li>The agent continues making guess.</li>
+        </ul>
+
+
+        <h3>Sprint Move</h3>
+        <p>The fugitive may discard one or more cards to move extra distance:</p>
+        <ul>
+            <li>Discarding an <i>odd-numbered card</i> increases the maximum step limit by 1.</li>
+            <li>Discarding an <i>even-numbered card</i> increases the maximum step limit by 2.</li>
+            <li>Discarded cards are placed face-down under the hideout played in this turn.</li>
+        </ul>
+
+        <h3>Guessing Hideouts</h3>
+        <ul>
+            <li>The agent guess whether a specific card is among the face-down hideouts.</li>
+            <li>If correct, the fugitive reveal the card along with any discarded cards below.</li>
+            <li>The agent may guess multiple cards at once, but must guess all correctly to count as a success.</li>
+        </ul>
+
+        <h3>Winning Conditions</h3>
+        <ul>
+            <li><b>The agent wins</b> if they reveal all of the fugitive’s hideouts before the Joker is played (face-up).</li>
+            <li><b>The fugitive wins</b> if they play the Joker AND at least one Spade hideout has been revealed.</li>
+            <li><b>The agent gets one last chance</b> if no Spade hideout has been revealed:</li>
+            <ul>
+                <li>The agent guesses one card at a time.</li>
+                <li>If the guess is correct, they continue.</li>
+                <li>If it is wrong, the fugitive wins and escapes.</li>
+            </ul>
+        </ul>
+
+    </div>
+
+</body>
