@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-bottom: -10px;
+        }
+        .center {
+            width: 90%; /* Set a wider width for small devices */
+            max-width: 600px; /* Restrict the maximum width for larger screens */
+            margin: 0 auto; /* Center content horizontally */
+        }
+        .example {
+            background-color: #eef;
+            border-left: 4px solid #5b9bd5;
+            padding-left: 20px;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <h1>Cabo</h1>
+        <p>This game is suitable for all ages! Your goal is to summon "Cabo" by making the sum of your cards as small as possible. Stay focused! You can only peek at your cards at specific moments, then it's on your unreliable working memory.</p>
+        
+        <h2>Setup</h2>
+        <ul>
+            <li>Shuffle a standard deck and deal <strong>four cards face-down</strong> to each player.</li>
+            <li>Flip one card face-up to start the <strong>discard pile</strong>, the rest is the <strong>draw pile</strong>.</li>
+            <li>Players may look at their <strong>two outermost cards</strong> at the start of the game.</li>
+        </ul>
+        
+        <h2>Gameplay</h2>
+        <p>Play proceeds clockwise. On your turn, draw ONE card from either:</p>
+        <ul>
+            <li>The draw pile (then you can peek at it).</li>
+            <li>The discard pile (it will be a face-up card).</li>
+        </ul>
+        <p>Then, choose ONE of the following three actions:</p>
+                
+        <h3>1. Swap a card</h3>
+        <p>Replace one of your cards with the newly drawn card face-down. Discard the replaced card.</p>
+        
+        <h3>2. Swap multiple cards</h3>
+        <p>Select multiple cards in play (at least one must be yours) and <strong>flip them face-up</strong>:</p>
+        <ul>
+            <li>If ALL revealed cards are of the same rank, you may replace them with the drawn card all at once.</li>
+            <li>If an opponent card was used, they choose a card from your side (without looking) to refill their spot.</li>
+            <li>If different ranks appear, your newly drawn card and the opponent's flipped cards go to the discard pile.</li>
+        </ul>
+                
+        <h3>3. Discard a card</h3>
+        <ul>
+            <li>Place the newly drawn card in the discard pile.</li>
+            <li>Discarding a <strong>9 to K</strong> from the draw pile triggers its special power:</li>
+            <ul>
+                <li>J/Q/K → Peek at any one card in play (yours or an opponent’s).</li>
+                <li>9/10 → Swap the positions of any two cards in play.</li>
+            </ul>
+        </ul>
+
+        <h3>Declaring Cabo</h3>
+        <p>Instead of drawing a card, you may declare <strong>Cabo</strong> when you think you have the lowest total.</p>
+        <ul>
+            <li>Other players take <strong>one final turn</strong>, then cards are revealed and scoring starts.</li>
+            <li>If the draw pile ever runs out, scoring starts <strong>immediately</strong>.</li>
+        </ul>
+
+        <h2>Scoring</h2>
+        <ul>
+            <li>The "Cabo" player score <strong>0 points</strong> if their total is the lowest (or tied) .</li>
+            <li>If they are not the lowest, they score <strong>their total + 10 penalty points</strong>.</li>
+            <li>All other players score their total (Joker = 0, A = 1, K = 13).</li>
+        </ul>
+        <h3>Game Ending</h2>
+        <ul>
+            <li>Players rotate as the staring player.</li>
+            <li>The first player to exceed 100 points <strong>loses</strong>.</li>
+            <li>If a player reaches exactly <strong>100 points</strong>, they may subtract <strong>50 points</strong>.</li>
+        </ul>        
+    </div>
+</body>
+</html>
