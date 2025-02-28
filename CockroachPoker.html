@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CockroachPoker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-bottom: -10px;
+        }
+        .center {
+            width: 90%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .example {
+            background-color: #eef;
+            border-left: 4px solid #5b9bd5;
+            padding-left: 20px;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <h1>Cockroach Poker</h1>
+        <p>When you spot one cockroach at home, it means more are on their way.<//p>
+        <p>This is an adaptation of the original <a href="https://boardgamegeek.com/boardgame/11971/cockroach-poker">game</a> using a 52-deck of playing card.</p>
+
+        <h2>Setup</h2>
+        <ul>
+            <li>4 players (recommended): deal a hand of 13 cards each.</li>
+            <li>5 players: 10 cards each (discard the extra 2 cards face up).</li>
+            <li>3 players: 15 cards each (discard the extra 7 cards face down).</li>
+        </ul>
+
+        <h2>Gameplay</h2>
+        <p>The starting player plays a card face down and pushes it to any other player while declaring its suit or rank. For example:</p>
+
+        <ul>
+            <li>“This card is an 8.”</li>
+            <li>“This card is a heart.”</li>
+        </ul>
+
+        <strong>The receiver can choose to judge or peek</strong>.
+        
+        <p>👉 If the receiver chooses to <strong>judge</strong>, they must say whether they believe the claim or not. Then the card is revealed:</p>
+        <ul>
+            <li>If their judgment is incorrect, they must keep the card in front of them.</li>
+            <li>If correct, the card is returned to the original player.</li>
+        </ul>
+
+        <p>👉 If the receiver chooses to <strong>peek</strong>, they must pass the card to another player who has not yet received it this round. They must also make a claim about the card in the same category (suit or rank).</p>
+
+        <p>If the card reaches the final player in the round, they must make a judgment. The player who concedes to take the card becomes the new starting player.</p>
+
+        <h3>Winning Conditions</h3>
+        <p>The game ends when any player meets one of the following conditions. The player with the fewest cards in front of them wins:</p>
+        <ul>
+            <li>They accumulate <strong>three cards of the same rank</strong>.</li>
+            <li>They accumulate <strong>four cards of the same suit</strong>.</li>
+            <li>It is their turn to play, but they have no cards left in hand.</li>
+        </ul>
+    </div>
+</body>
+</html>

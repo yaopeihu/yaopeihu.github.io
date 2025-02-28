@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleusis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-bottom: -10px;
+        }
+        .center {
+            width: 90%; /* Set a wider width for small devices */
+            max-width: 600px; /* Restrict the maximum width for larger screens */
+            margin: 0 auto; /* Center content horizontally */
+        }
+        .example {
+            background-color: #eef;
+            border-left: 4px solid #5b9bd5;
+            padding-left: 20px;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <h1>Eleusis</h1>
+        <p>The classical card game <a href="https://en.wikipedia.org/wiki/Eleusis_(card_game)">Eleusis</a> redesigned to be cooperative, no more frustration.</p>
+        <p>One player, the "God", secretly decides a card-playing rule. Other players must deduce this rule through testing or questioning. Recommended for 2-5 players.</p>
+        
+        <div class="example">
+            <h3>&nbsp Examples of Possible Rules:</h3>
+            <ul>
+                <li>Only cards with prime numbers are accepted.</li>
+                <li>No more than two cards can have the same number.</li>
+                <li>The number of black cards on the table must exceed the red.</li>
+                <li>A red card must always be followed by an even-numbered card.</li>
+            </ul>
+        </div>
+        
+        <h2>Gameplay</h2>
+        <p>Use a standard deck of cards without jokers. <br>
+            Players take turns drawing two cards and choosing one of two actions:</p>
+        
+        <h3>1. Testing the Rule:</h3>
+        <ul>
+            <li>Hand both cards to the <i>God</i>.</li>
+            <li>The <i>God</i> reveals whether one of them follows the rule.</li>
+            <li>If accepted, place it below the last accepted card.</li>
+            <li>The other card is discarded.</li>
+        </ul>
+        
+        <h3>2. Asking a Question or Guessing the Rule:</h3>
+        <ul>
+            <li>Discard both cards.</li>
+            <li>Either make a guess or ask the <i>God</i> a question.</li>
+            <li>The <i>God</i> may only answer "Yes" or "No".</li>
+        </ul>
+        
+        <p>If the deck runs out before the rule is guessed, everyone loses. <br>If players successfully deduce the rule, everyone wins.</p>
+            
+        <ul>
+            <li><strong>Default Settings:</strong> A-K represent 1-13. Only red/black matters (not suits). Rejected or discarded cards are not considered in rule validation.</li>
+            <li><strong>Initial Rule Conditions:</strong> If a rule involves a comparison (e.g., "each card must be larger than the previous one"), then the first card is always accepted.</li>
+        </ul>
+
+        <div class="example">
+            <h3>&nbsp Common Questions to Ask</h3>
+            <ul>
+                <li>Is the rule only concerned about the previous one/two cards?</li>
+                <li>Does the rule concern the color or parity (odd/even) of the cards?</li>
+                <li>Does the rule involve mathematical operations (addition, subtraction, multiplication, division)?</li>
+            </ul>
+            </div>    
+
+    </div>
+</body>
+</html>
