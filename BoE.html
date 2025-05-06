@@ -25,6 +25,14 @@
             border-left: 4px solid #5b9bd5;
             padding: 1px;
             padding-left: 25px;
+        }        
+        .dash-list {
+            list-style: none;
+            padding-left: 20px;
+        }
+        .dash-list li::before {
+            content: "-";
+            padding-right: 10px;
         }
     </style>
 </head>
@@ -44,7 +52,7 @@
         <img src="BoE.jpg", width="300">
 
         <ul>
-            <li>2-10 are <strong>Beanstalks</strong></li>
+            <li>2-10 are <strong>Beanstalk Cards</strong></li>
             <li>Q and K are <strong>Magic Cards</strong></li>
             <li>Red J, Black J, and Joker are <strong>Treasures</strong></li>
         </ul>
@@ -53,38 +61,34 @@
         <p>Players take turns, with Jack going first.</p>
     
         <h3>Jack's Turn</h3>
-        <p>Jack takes 3 actions per turn. Each action start with taking one card from the front or back of any castle column, then choosing one of the following:</p>
-        <ul>
-            <li>Plant it on a beanstalk (Magic Cards cannot be planted)</li>
-            <li>Move it to the front of any castle column (if taken from the back, it can only be placed at the front of the same column)</li>
+        <p>Jack takes three actions per turn. Each action start with taking one card from the front or back of any castle column, then choosing one of the following:</p>
+        <ul class="dash-list">
+            <li>Plant it on a beanstalk in ascending order. A Treasure must be placed as the 7th card before starting a new beanstalk. Magic cards cannot be used.</li>
+            <li>Move it to the front of any castle column. If the card is taken from the back, it can only be placed at the front of the same column. </li>
         </ul>
-        <p>Each beanstalk must consist of 6 Beanstalk Cards in ascending order. Once completed, Jack must place a Treasure Card on it before starting a new one.</p>
     
         <h3>Giant's Turn</h3>
-        <p>The Giant performs one of the following actions per turn:</p>
-        <ul>
-            <li>Move exactly four front cards from one castle to the front of another</li>
+        <p>The Giant takes one of the following actions per turn:</p>
+        <ul class="dash-list">
+            <li>Move exactly four cards from the front of one castle to another</li>
             <li>Remove any one Beanstalk Card from the castles (out of the game)</li>
-            <li>Do two moves: each move is transferring the front card of a castle to the front of another castle</li>
+            <li>Do this twice: transfer the front card of a castle to the front of another</li>
         </ul>
-    
-        <h2>Victory Conditions</h2>
-    
-        <h3>Jack Wins If:</h3>
+        
+        <h3>Winning</h3>
         <ul>
-            <li>He collects all 3 types of treasures: Red J, Black J, and Joker</li>
-        </ul>
-    
-        <h3>The Giant Wins If:</h3>
-        <ul>
-            <li>Jack is unable to complete 3 full beanstalks with treasures</li>
-            <li>Or the Magic Cards meet one of these patterns:
-                <ul>
-                    <li>Four consecutive Magic Cards of different suits in one castle</li>
-                    <li>The front cards of four different castles are Magic Cards of four different suits</li>
+            <li> <b>Jack Wins</b> if he collects all 3 types of treasures: Red J, Black J, and Joker</li>
+     
+        
+            <li> <b>The Giant Wins</b> if Jack is unable to complete 3 beanstalks 
+                <b>or</b>:</li>
+                <ul class="dash-list">
+                    <li>The front cards of 4 castles are Magic Cards of 4 different suits</li>
+                    <li>There are 4 consecutive Magic Cards of different suits in one castle</li>
                 </ul>
             </li>
         </ul>
+        <br>
     </div>
     </body>
 </html>
