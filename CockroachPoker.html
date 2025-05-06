@@ -3,37 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>CockroachPoker</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        h1, h2, h3 {
-            color: #2c3e50;
-            margin-bottom: -10px;
-        }
-        .center {
-            width: 90%;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .example {
-            background-color: #eef;
-            border-left: 4px solid #5b9bd5;
-            padding-left: 20px;
-            padding: 3px;
-        }
-    </style>
 </head>
 <body>
     <div class="center">
         <h1>Cockroach Poker</h1>
-        <p>When you spot one cockroach at home, it means more are on their way.<//p>
-        <p>This is an adaptation of the original <a href="https://boardgamegeek.com/boardgame/11971/cockroach-poker">game</a> using a 52-deck of playing card.</p>
+        <p>When you spot one cockroach at home, it means more are on their way.</p>
+        <p>This is a variant of the <a href="https://boardgamegeek.com/boardgame/11971/cockroach-poker">original game</a> using a 52-deck of playing card.</p>
 
         <h2>Setup</h2>
         <ul>
@@ -63,12 +40,13 @@
         <p>If the card reaches the final player in the round, they must make a judgment. The player who concedes to take the card becomes the new starting player.</p>
 
         <h3>Winning Conditions</h3>
-        <p>The game ends when any player meets one of the following conditions. The player with the fewest cards in front of them wins:</p>
+        <p>The game ends when any player meets one of the following conditions:</p>
         <ul>
             <li>They accumulate <strong>three cards of the same rank</strong>.</li>
             <li>They accumulate <strong>four cards of the same suit</strong>.</li>
             <li>It is their turn to play, but they have no cards left in hand.</li>
         </ul>
+        <p>The player with the fewest cards in front of them wins:</p>
     </div>
 </body>
 </html>

@@ -1,31 +1,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Fugitive</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        h1, h2, h3 {
-            color: #2c3e50;
-            margin-bottom: -10px;
-        }
-        .center {
-            width: 90%; /* Set a wider width for small devices */
-            max-width: 600px; /* Restrict the maximum width for larger screens */
-            margin: 0 auto; /* Center content horizontally */
-        }
-        .example {
-            background-color: #eef;
-            border-left: 4px solid #5b9bd5;
-            padding-left: 20px;
-            padding: 3px;
-        }
-    </style>
 </head>
 <body>
 
@@ -33,7 +10,7 @@
         <h1>Fugitive</h1>
         <p>The cunning fugitive moves between hideouts to catch a plane. Can the agent track down the fugitive before they escape, or being outmaneuvered?</p>
         
-        <h2>Game Setup</h2>
+        <h3>Game Setup</h3>
         <ul>
             <li>Shuffle the ♣️Clubs, ♥️Hearts, and ♠️Spades separately into 3 draw piles.</li>
             <li>Place the ♦️10 face-up on one side of the table as the starting card.</li>
@@ -52,35 +29,32 @@
         </div>
 
         <h2>Gameplay</h2>
-        <h3> The first round:</h3>
+        <h3> The first round</h3>
         <ul>
             <li><b>Fugitive's Turn</b>: Draws 3 cards from Clubs and 2 from Hearts, then plays 1 or 2 cards face-down as <i>hideouts</i>.</li>
             <li><b>Agent's Turn</b>: Draws 2 cards from any pile and makes one guess about the fugitive’s hideouts.</li>
         </ul>
-        <h3> The later rounds:</h3>
-        <ul>
-            <li>Players take turns, starting by drawing 1 card from any pile.</li>
-            <li>The fugitive plays 1 or 0 hideout, with an option to sprint.</li>
-            <li>The agent continues making guess.</li>
-        </ul>
-
+        <h3> The later rounds</h3>
+        <p>Players take turns, starting by drawing 1 card from any pile:</p>
+            <ul>
+                <li><b>The Fugitive</b> plays 1 or 0 hideout, with an option to sprint.</li>
+                <li><b>The Agent</b> makes one guess of the hideouts.</li>
+            </ul>
+    
 
         <h3>Sprint Move</h3>
         <p>The fugitive may discard one or more cards to move extra distance:</p>
-        <ul>
+        <ul class="dash-list">
             <li>Discarding an <i>odd-numbered card</i> increases the maximum step limit by 1.</li>
             <li>Discarding an <i>even-numbered card</i> increases the maximum step limit by 2.</li>
             <li>Discarded cards are placed face-down under the hideout played in this turn.</li>
         </ul>
 
         <h3>Guessing Hideouts</h3>
-        <ul>
-            <li>The agent guess whether a specific card is among the face-down hideouts.</li>
-            <li>If correct, the fugitive reveal the card along with any discarded cards below.</li>
-            <li>The agent may guess multiple cards at once, but must guess all correctly to count as a success.</li>
-        </ul>
+        <p>The agent guess whether a specific card is among the face-down hideouts. If correct, the fugitive reveal the card along with any discarded cards below. The agent may guess multiple cards at once, but must hit all to count as correct.</p>
+        
 
-        <h3>Winning Conditions</h3>
+        <h3>Winning</h3>
         <ul>
             <li><b>The agent wins</b> if they reveal all of the fugitive’s hideouts before the Joker is played (face-up).</li>
             <li><b>The fugitive wins</b> if they play the Joker AND at least one Spade hideout has been revealed.</li>
